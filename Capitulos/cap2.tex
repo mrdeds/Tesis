@@ -1,0 +1,51 @@
+\chapter{Marco Teórico}
+
+\textbf{Soluciones alternas}
+Hacer un chatbot es una solución a un problema que ya estaba siendo atendido, pero que se quería atacar de forma diferente. Sin embargo, queda lejos de ser la única solución al problema de la interacción con clientes a través del chat de Facebook Messenger. Hablemos de algunas de las soluciones alternas a este problema.
+
+ Empezando por cómo se venía haciendo tradicionalmente. El chat de Resuelve tu deuda era atendido únicamente por una persona, que se dedicaba a estar al pendiente de lo que los prospectos y clientes querían comunicar (Dudas, aclaraciones, comentarios, etc). Esta persona tenía que estar todo el día atenta al servicio de estas personas y contestarles acorde a sus mensajes. 
+
+Esta forma de interacción era adecuada para los usuarios, ya que podían recibir la respuesta adecuada la mayoría de las veces. Sin embargo tiene sus contras. Al ser una persona la que contesta, el tiempo que le dedica a una conversación es limitado y solo puede atender una conversación a la vez; así como el horario en el que puede contestar. Sin mencionar que todo el conocimiento está centralizado en la privacidad del cerebro del community manager, el cual al irse de la empresa se lo lleva y se tiene que entrenar a otra persona. Tanto a lo que se les contesta a los usuarios como la forma en que se les contesta. Aunque este punto puede ser mejorado haciendo una base de conocimiento (la cual, hasta el momento de hacer este bot, no existe), el entrenamiento de una persona sigue siendo un problema latente. Dicho lo anterior se nota que es mejorable este tipo de interacción. 
+
+Otra posible solución es la de crear un app móvil. Esta solución tiene varios puntos a favor, como que siempre esté disponible una respuesta a un usuario, el tono y contenido del mensaje vayan acorde a los que maneja la empresa y que no nos tenemos que preocupar por que el app vaya a ser despedida o renunciar. 
+
+Sin embargo, es muy poco probable que alguien descargue un app para solucionar preguntas de un servicio del cual no es usuario. Para solucionar el tema de descargar un app móvil se podría pensar en hacer una webapp. Un sistema cuya interacción se a través de un navegador web, el cual se encuentra en cualquier dispositivo móvil y computadora. Aún resolviendo esta barrera de acceso, lo invertido en un app web/móvil puede llegar a ser mucho dinero, tiempo y esfuerzo (añadir referencia de lo que cuesta hacer un app).  Entonces, esta solución tampoco suena tan coherente para el problema en cuestión.
+
+
+Algunas compañías, sobre todo del tipo Saas, utilizan algo llamado base de conocimiento (o knowledge base). La cual funge como una gran página de FAQs (preguntas frecuentes), donde se ponen las preguntas con respuestas más frecuentes y ‘obvias’ que los cliente han tenido o pueden tener. Este enfoque es más de autoservicio y evita tener a una persona respondiendo individualmente a cada usuario. Sin embargo, estas preguntas se van haciendo como vayan siendo necesarias y existe el riesgo de que haya inconsistencia y preguntas repetidas. También esto implica tener que estar buscando las preguntas, lo cual es más laborioso para el usuario y fácilmente puede ya no querer seguir en el sitio.
+
+Podemos ver como todas las soluciones tienen ventajas, sin embargo hay algunas  desventajas que nos hacen ver que otro tipo de interacción sería mejor. Como la de un chatbot. Un chatbot está pensado para estar disponible siempre, no se enferma y si no funciona como queremos lo podemos mejorar, sin tener que lidiar con personas. La base de conocimiento puede ser ampliada y se guarda en un lugar para su continua mejora. El medio de contacto es en el chat de Facebook Messenger, lo cual resulta muy conveniente, porque no requiere que el usuario tenga que cambiar de programa o descargar una nueva app. Otra ventaja que se asume es que el usuario ya está familiarizado con el uso de un chat. Según datos de Facebook hay 1,200 millones de personas que usan su Messenger alrededor del mundo. \cite{zuckerberg2017results}
+
+
+Teniendo una base tan grande de usuarios y considerando que México es uno de los 5 países con más usuarios en Facebook debería ser muy sencillo interactuar con el bot dentro de esta plataforma.
+
+\textbf{Tipos de chatbots}
+
+Un bot conversacional o chatbot es un programa que busca simular una conversación a partir de la entradas hechas por un usuario. Usualmente las entradas son en forma de texto, aunque también hay algunos que aceptan entradas de otro tipo, como la voz. Aquí nos centraremos en los que solo interactúan a través de entradas de texto. Aunque parece ser muy reciente la creación de chatbots, se sabe que desde los años 50 existían algunos, como Eliza, que trataban de imitar la conversación de una persona y pasar la prueba de Turing. Actualmente existen muchos chatbots en el mercado con una gran variedad de usos. Se clasifican de diferente maneras. La que usaremos es partir de la propuesta que nos ofrece el investigador Dotan Elharrar Product Manager en Microsoft AI and Research a partir de las funciones que tienen y el valor que proveen al usuario:
+
+\textbf{Optimizador}
+Este tipo de bot trata de resolver cierta tarea mejor que cualquier opción ya existente, se un app, un sitio web, un programa, etc. 
+Un ejemplo de esto es decirle a un sistema como Siri en un dispositivo iOS que reproduzca una canción y no tener que desbloquearlo, abrir la aplicación, buscar la a canción, encontrarla y reproducirla. Este asistente usa una interfaz de lenguaje natural por voz para poder responder preguntas que en su mayoría serán delegadas a servicios en Internet como Wikipedia, el buscador de Google o algún app nativa.
+\textbf{Mono-utilitario}
+Son bots que tienen una sola pequeña función utilitaria o lúdica y que cuentan con una interfaz de chat. Algunos de los ejemplos son bots que permiten hacer de una imagen un meme o un texto en un video.
+Tal es el caso de \textit{Erwin} \cite{niefelderwin2017}, un chatbot cuya finalidad es de proveer acertijos y validar las respuestas introducidas. O el bot de \textit{La prueba de Rorschart} \cite{niefeldrorschach2017}, cuyo fin es conocer aspectos de la personalidad de una persona a mostrándole imágenes con manchas de tinta.
+\textbf{Proactivo}
+Bots que pueden dar información muy útil en casos muy concretos. Sin embargo, para interacción en una situación cotidiana no tienen utilidad. 
+Un ejemplo es el bot de KLM \cite{klm2016messenger}, que le ayuda a los pasajeros de la aerolínea a recordar sus vuelos, dar avisos de cambios de itinerario, tener digitalmente sus boletos y cambiar detalles de su viaje. Sobre todo funciona para seguir en contacto con sus clientes y ver hábitos de consumo para hacer una mejor segmentación y análisis
+\textbf{Social}
+Este es un tipo de bot que suele ser muy parecido al mono-utilitario, sin embargo cuenta con dos características que lo separan: se basa en la interacción social y da lugar a la multitud para que sea la voz principal de la conversación. Funge sólo como guía de la conversación. Ejemplo de esto es \textit{Swelly} \cite{swelly2017messenger}. 
+Swelly es un chatbot que ayuda a gente que quiere decidir ante dos posibilidades. i.e. Dos vestidos, dos lugares a donde ir, dos tipos de comida,etc. Esta información es recopilada y se le manda a la persona que preguntó lo que la comunidad ha elegido.
+
+\textbf{Escudo}
+Estos bots son creados para evitar que tengamos malas experiencias. Se parecen a los optimizadores sin embargo tratan de evitar que tengamos platicas con un humano cuando una máquina podría solucionarnos el problema fácilmente. Ejemplos de esto son el agente virtual de servicio a cliente de Microsoft o \textit{DoNotPay} \cite{donotpay2017} el chatbot que te ayuda a apelar multas de tránsito.
+\textbf{Conversacional}
+Este tipo de bots están dedicados solo a entablar una conversación con el usuario. Se usan principalmente como método de investigación y retención de usuario. Tener una conversación puede parecer entretenido y se cree que al interactuar con este tipo de bots se puede conocer a una persona de una mejor manera. Ejemplo de este tipo de bots es \textit{Xiaoice} \cite{wiki:Xiaonic} , un chatbot que hace las veces de una niña de 12 años, la cual principal objetivo es entablar una conversaciones. Ha tenido más de 10 mil millones de conversaciones y puede considerarse como la prueba de Turing más larga de la historia.
+Asistente personal
+Este tipo de bots tienen múltiples funcionalidades y han evolucionado al punto de ser plataformas para la ejecución de programas y  bots de menor funcionalidad. Algunos son capaces de tener entradas de voz inclusive. Algunos ejemplos son los asistentes personales como Siri de Apple, Cortana de Microsoft, Allo y Google now de Google. Así como un desarrollo de la universidas Metropolitana de Manchester, \textit{Betty} \cite{curry2013betty}.
+
+
+\textbf{Panorama actual de los chatbots}
+
+ Desde 1960 con LIZA\cite{shawar2005using}, hasta 2018 con productos como Siri o Google Now, el panorama de los chatbot ha ido evolucionando y haciéndose más complejo. Se puede observar en el diagrama a continuación la amplia gama piezas que pueden intervenir en un bot conversacional actual.
+
+

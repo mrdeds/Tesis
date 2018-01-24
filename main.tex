@@ -5,34 +5,35 @@
 \usepackage{amssymb,amsmath,amsthm} %paquete para símbolo matemáticos
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc} %Paquete para escribir acentos y otros símbolos directamente
+% for inline and display quotations.
+\usepackage[autostyle]{csquotes}
 \usepackage{enumerate}
 \usepackage{graphicx}
 %\usepackage{subfig} %para poner subfiguras
 \graphicspath{{Img/}} %En qué carpeta están las imágenes
 \usepackage[nottoc]{tocbibind}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{minted}
 \usepackage[pdftex,
-            pdfauthor={NOMBRE DEL AUTOR},
-            pdftitle={TÍTULO DE LA TESIS},
+            pdfauthor={Dudley Esteban Díaz Suárez},
+            pdftitle={Diseño de un Sistema de Procesamiento de Lenguaje Natural para la Atención a Clientes Automatizada},
             pdfsubject={ÁREA DE LA TESIS},
             pdfkeywords={PALABRAS CLAVE},
             pdfproducer={Latex con hyperref},
             pdfcreator={pdflatex}]{hyperref}
+\usepackage{filecontents}
+
 
 
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	COMANDOS PERSONALIZADOS
-%----------------------------------------------------------------------------------------
-
-%SI TU TESIS TIENE TEOREMAS Y DEMOSTRACIONES, PUEDES DESCOMENTAR Y USAR LOS SIGUIENTES COMANDOS
-
-%\renewcommand{\proofname}{Demostración}
-%\providecommand{\norm}[1]{\lVert#1\rVert} %Provee el comando para producir una norma.
-%\providecommand{\innp}[1]{\langle#1\rangle} 
-%\newcommand{\seno}{\mathrm{sen}}
-%\newcommand{\diff}{\mathrm{d}}
+\renewcommand{\proofname}{Demostración}
+\providecommand{\norm}[1]{\lVert#1\rVert} %Provee el comando para producir una norma.
+\providecommand{\innp}[1]{\langle#1\rangle} 
+\newcommand{\seno}{\mathrm{sen}}
+\newcommand{\diff}{\mathrm{d}}
 
 %\newtheorem{teo}{Teorema}[section] 
 %\newtheorem{cor}[teo]{Corolario}
@@ -51,7 +52,7 @@
 %	PORTADA
 %----------------------------------------------------------------------------------------
 
-\title{TÍTULO DE LA TESIS} %Con este nombre se guardará el proyecto en writeLaTex
+\title{Diseño de un Sistema de Procesamiento de Lenguaje Natural para la Atención a Clientes Automatizada} %Con este nombre se guardará el proyecto en writeLaTex
 
 \begin{titlepage}
 \begin{center}
@@ -67,24 +68,24 @@
 
 \vspace{4em}
 
-\textsc{\huge \textbf{TÍTULO DE LA TESIS}}\\[4em]
+\textsc{\huge \textbf{Diseño de un Sistema de Procesamiento de Lenguaje Natural para la Atención a Clientes Automatizada}}\\[4em]
 
-\textsc{\large Tesis}\\[1em]
+\textsc{\large Tesina}\\[1em]
 
 \textsc{que para obtener el título de}\\[1em]
 
-\textsc{TÍTULO  VAS A OBTENER}\\[1em]
+\textsc{INGENIERO EN COMPUTACIÓN}\\[1em]
 
 \textsc{presenta}\\[1em]
 
-\textsc{\Large AUTOR}\\[1em]
+\textsc{\Large Dudley Esteban Díaz Suárez}\\[1em]
 
-\textsc{\large Asesor: NOMBRE}
+\textsc{\large Asesor: DR. JOSÉ OCTAVIO GUTIÉRREZ GARCÍA}
 
 \end{center}
 
 \vspace*{\fill}
-\textsc{México, D.F. \hspace*{\fill} 2014}
+\textsc{México, D.F. \hspace*{\fill} 2018}
 
 \end{titlepage}
 
@@ -96,7 +97,7 @@
 \thispagestyle{empty}
 \vspace*{\fill}
 \begingroup
-``Con fundamento en los artículos 21 y 27 de la Ley Federal del Derecho de Autor y como titular de los derechos moral y patrimonial de la obra titulada ``\textbf{TÍTULO DE LA TESIS}'', otorgo de manera gratuita y permanente al Instituto Tecnológico Autónomo de México y a la Biblioteca Raúl Bailléres Jr., la autorización para que fijen la obra en cualquier medio, incluido el electrónico, y la divulguen entre sus usuarios, profesores, estudiantes o terceras personas, sin que pueda percibir por tal divulgación una contraprestación''.
+``Con fundamento en los artículos 21 y 27 de la Ley Federal del Derecho de Autor y como titular de los derechos moral y patrimonial de la obra titulada ``\textbf{Diseño de un Sistema de Procesamiento de Lenguaje Natural para la Atención a Clientes Automatizada}'', otorgo de manera gratuita y permanente al Instituto Tecnológico Autónomo de México y a la Biblioteca Raúl Bailléres Jr., la autorización para que fijen la obra en cualquier medio, incluido el electrónico, y la divulguen entre sus usuarios, profesores, estudiantes o terceras personas, sin que pueda percibir por tal divulgación una contraprestación''.
 
 \centering
 
@@ -147,12 +148,12 @@
 %	PREFACIO
 %----------------------------------------------------------------------------------------
 
-\chapter*{Prefacio}
+%\chapter*{Prefacio}
 
 \pagestyle{plain}
 %\markboth{PREFACIO23}{PREFACIO} % encabezado 
 
-PUEDEN QUITAR ESTA PARTE
+%PUEDEN QUITAR ESTA PARTE
 
 
 %----------------------------------------------------------------------------------------
@@ -171,10 +172,15 @@ PUEDEN QUITAR ESTA PARTE
 %  Incluye los capítulos en el folder de capítulos
 
 \include{Capitulos/cap1}
-\thispagestyle{empty}
-\include{Capitulos/Conclusiones}
+\include{Capitulos/cap2}
+%\thispagestyle{empty}
+\include{Capitulos/cap3}
+\include{Capitulos/cap4}
+\include{Capitulos/cap5}
+\include{Capitulos/cap6}
 \thispagestyle{empty}
 
+\include{Capitulos/Conclusiones}
 
 %----------------------------------------------------------------------------------------
 %	APÉNDICES
@@ -187,7 +193,7 @@ PUEDEN QUITAR ESTA PARTE
 %  Incluye los apéndices en el folder de apéndices
 
 \include{Apendices/Ap}
-\thispagestyle{empty}
+%\thispagestyle{empty}
 %\include{Apendices/AppendixB}
 %\include{Apendices/AppendixC}
 
@@ -197,14 +203,10 @@ PUEDEN QUITAR ESTA PARTE
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAFÍA
 %----------------------------------------------------------------------------------------
-\backmatter
-\nocite{*}
+
 \bibliographystyle{plain}
-\bibliography{bibliografía.bib} %Aquí ponen el nombre del archivo .bib
+\bibliography{bibliografia.bib}
 
 
-
-
-
-
+%\printbibliography
 \end{document}

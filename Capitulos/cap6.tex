@@ -1,0 +1,200 @@
+\chapter{Pruebas}
+\textbf{Metodología}
+
+Analizando los datos de interacción web se sabe que la gente que decide darnos sus datos lo hace el 90\% la primera vez que visita la página(figura 1 del apéndice).Entonces lo más acercado a la realidad sería tener a usuarios nuevos cada vez que se hagan pruebas.
+Se realizaron pruebas antes del lanzamiento al público del chatbot. Se eligieron al azar 5 miembros del equipo de marketing, los cuales no tenían conocimiento alguno de la existencia del proyecto. La prueba consistió en decirles que el bot iba a poder atenderlos como si fueran una persona interesada en Resuelve tu deuda y contestar algunas preguntas sobre el producto. Cada individuo participó en una etapa diferente del desarrollo del bot. A continuación se muestran un transcrito de cada iteración de pruebas:
+
+\textbf{Notación:}
+\begin{itemize}
+\item -  Individuo (“opniones del individuo”)
+\item + Bot
+\item *  Descripción de eventos en la plataforma
+\end{itemize}
+
+
+
+\textbf{Pruebas chatbot 1.0}
+
+
+*Se muestran dos veces el mensaje de bienvenida
+
+-COMO FUNCIONA EL PROGRAMA,
+
++ "te ayudamos a liquidar deudas que ya no puedes pagar con hasta 70\% de descuento. Nosotros negociamos con tus acreedores y ajustamos tus pagos mensuales a lo que puedas pagar "
+
+- ”Es mucha información”
+
+-como negocian las deudas? con que bancos?
+
++(Oops, no entendí eso . Intentalo de nuevo ¿Cómo te puedo ayudar?)
+
+-como le hacen para negociar ?
+
++(Oops, no entendí eso . Intentalo de nuevo ¿Cómo te puedo ayudar?)
+
+-tengo un límite de deuda?
+
++(Oops, no entendí eso . Intentalo de nuevo ¿Cómo te puedo ayudar?)
+
+-quiero liquidar mis deudas
+
++¿A quién le debes? (Bancos) (Financieras) (Tiendas departamentales)
+
+-Bancos
+
++¿A qué banco le debes?
+
+*(AMEX) (BANAMEX) (BANORTE/IXE) (BBVA/BANCOMER) (HSBC) (INBURSA) (INVEX) (SANTANDER) (SCOTIABANK) (BANCO WALMART)
+
+-AMEX
+
++¿Cuántos meses de atraso tienes?
+
+*(0-5 meses) (6 meses) (7 meses) (8 meses) (9 meses) (10 o más meses)
+
+-6 meses
+
++¿Cuánto debes en total?
+
+-300000
+
++¿Cuál es tu correo?
+
+-*****@resuelve.mx
+
++¿A qué número prefieres que te marquemos?
+
+
+-1234567890
+
++Tu deuda de \$ 300000.0 con AMEX con atraso de
+Quedaría con un 25 \% de descuento en \$ 225000.0
+¡Gracias! Un asesor te contactará pronto
+
+*Menú
+
+\smallskip
+\textbf{Observaciones y cambios para siguiente versión}
+\smallskip
+\textbf{[Etapa]}Principio del camino:
+
+
+ \textbf{[Cambio]}Que se presente como un bot al principio y establecer expectativas a usuarios: 
+Tienes que hablarle o el bot se introduce. 
+Se tarda en contestar, establecer esa expectativa en el tiempo de respuesta.  Comunicar: "No es instantáneo, me tardo unos segundos".
+
+\textbf{[Cambio]}
+"Hola 'NAME' soy Resuelbot, un robot muy rápido y eficiente creado para ayudarte :), si no tengo una respuesta para tí uno de mis humanos te atenderá. Dime ¿En qué te puedo ayudar?".
+\textbf{[Etapa]}Conoce el programa: El plan integral de ahorro no dice mucho.
+Te ayudamos a liquidar deudas que ya no puedes pagar con hasta 70\% de descuento. Nosotros negociamos con tus acreedores y ajustamos tus pagos mensuales a lo que puedas pagar ;). 
+
+\textbf{[Cambio]} Los sliders son iguales - quitar el segundo y cambiar el copy a ve nuestro video.
+
+\textbf{[Cambio]} Cotización - se trabó cuando le di un input de texto en la opción múltiple de bancos. 
+
+\textbf{[Cambio]} Ajustar el texto para preguntar “¿Cuál es tu deuda más grande?”
+
+\textbf{[Etapa]}Cotización - no acepta entradas de texto en la opción múltiple de bancos.
+
+\textbf{[Cambio]} Ajustar el texto para preguntar la deuda más grande
+
+\textbf{[Cambio]}Por ahora, ser más claros en el copy añadiendo "no uses comas o signos".
+
+\textbf{[Etapa]}Datos personales:
+
+\textbf{[Cambio]} preguntar “A qué número prefieres que te marquemos?”
+[Añadir]Algún horario en particular?
+
+\textbf{[Etapa]}Menú al final de la cotización: 
+
+\textbf{[Cambio]} En lugar de “no sé qué preguntar” cambiar por "Tengo otra pregunta"
+
+\textbf{[Añadir]}Agregar a parte del "Quiero que me hablen" un "Quiero cotizar mi descuento".
+
+\textbf{[Etapa]}Quiero saber más: Necesitamos generar confianza. Hay que dar una respuesta más  convincente: 
+
+\textbf{[Cambio]}Resuelve Tu Deuda fue fundada por Javier y Juan Pablo en 2006, la primera reparadora de crédito en México! emoji: bandera mex y tarjeta -foto-. Hoy somos más de mil colaboradores resolviendo problemas de deuda, hemos ayudado a más de 80k clientes a recuperar su tranquilidad . -foto, footer "mira cuantos somos :o-
+
+\textbf{[Cambio]} “Déjanos tus datos” cambiar por “Quiero una asesoría", tentativamente la gente todavía quiere saber más sobre el producto, suena muy agresiva la primera opción. 
+
+\textbf{[Etapa]}Casos de éxito/testimonios
+
+\textbf{[Cambio]}Hay que tener un copy de transición entre el input que sale de la opción múltiple "Estos son algunos de nuestros clientes y sus historias, conócelos"....Agregar a las opciones del bloque, menú.  
+
+\textbf{[Etapa]}Sucursales
+
+\textbf{[Cambio]}Cambiaría el copy a "encuentra la sucursal que más cerca te quede" o contáctanos por teléfono agregar la opción de teléfono o un botón que llame-> agregamos la cotización. Segunda versión podemos personalizar el bloque de cada zona para que no te lleve a la página general de sucursales. 
+Testimonios-> punto 8.
+
+\textbf{[Etapa]} Validación sobre el mínimo de deuda:
+Agregar que tienes que estar atrasado y revisar el copy: "Los requisitos para entrar al programa Resuelve son: que estés atrasado en el pago de tus deudas, que tus deudas sumen más de \$35,000 pesos y que esas deudas sean con bancos, tiendas departamentales, Crédito Familiar o Credomatic.
+
+\textbf{[Etapa]} Beneficios: las imágenes de los beneficios son de baja calidad, cambiarlas. " Estos son los beneficios del programa Resuelve:"
+Conseguimos descuentos de hasta 70\% ;)
+Nosotros nos encargamos de negociar con los bancos .
+Atendemos las llamadas de cobranza.
+Te damos asesoría legal y financiera gratis a lo largo de todo el programa Resuelve.
+Empezamos a sanear tu Buró para que seas candidato a crédito en el futuro.
+Total visibilidad del proceso de negociación y de repago a través de nuestra aplicación móvil.
+
+\textbf{[Nueva Etapa]} Después del escenario de éxito hay que agregar un mensaje que pida un comentario para mejorar el bot- Después de cada cotización.
+
+\textbf{[Mejoras]}Métricas. Qué vemos, cómo nos damos cuenta de en qué momento fallamos? 
+\textbf{[Nueva opción]} Dar la opción para que pueda contestar un agente de servicio a cliente. 
+
+\medskip
+\textbf{Mejoras para la siguiente versión:}
+
+Cambiar copies con la revisión previa
+Guardar datos del formulario en una hoja de cálculo de en línea “Google Sheet”
+Hacer cálculo de descuento y regresar el cálculo como respuesta
+
+\medskip
+\textbf{Pruebas chatbot 2.0}
+
+Se hacen algunas modificaciones al flujo y mensajes del bot para mejorar la experiencia:
+\begin{itemize}
+\item Se añaden todas las mejoras comentadas en la prueba 1.0 
+\item Se añaden algunos mensajes extra para hacer más natural el segundo saludo del bot.
+\item Se alimenta a la lista de entradas diferentes saludos para hacer más robusta la interacción
+\item Se da formato a los datos que se guardan en la BD
+
+\end{itemize}
+
+Se hicieron algunas pruebas con algunas personas que no estaban involucradas al proyecto pero son parte de la empresa.
+Se les dijo que probaran el chatbot sin ninguna instrucción adicional. 
+Fueron 10 personas. La mayoría optó por pedir más información acerca de la empresa, calcular el descuento sobre alguna deuda y dejar sus datos. 
+Todos llegaron al mensaje por default, el cual indica que lo escrito no fue reconocido por el chatbot como una entrada esperada.
+Se pidió proporcionar retroalimentación sobre la experiencia con el chatbot. Se recopilaron varias opiniones:
+"Debería poder reconocer diferentes tipos de entradas cuando te pregunta sobre tu deuda"
+"Hay algunas cosas que no me supo contestar que la gente usualmente tiene dudas antes de entrar al programa"
+"Debería poder responder alguien si no entiende mi pregunta"
+Se hacen algunos cambios al flujo para hacer más clara la interacción y limitaciones del chatbot:
+Se añade a la lista de comandos la opción de hablar con una persona.
+Se añade a la pila de entradas de reconocimiento de lenguaje natural frases como: "cuanto cobran?","
+\medskip
+\textbf{Pruebas chatbot 3.0}
+Ahora se asocia el chatbot con el Fan Page de Resuelve Tu Deuda México y se le asigna a una persona que se encargue de responder a usuarios que pidan hablar con un humano.
+Para hacer
+Se observaron diversos tipos de interacción. Se agrupan las conversaciones en tres tipos:
+-Nueva interacción
+-Servicio a cliente
+-Empleados (testers)
+Con las nuevas interacciones se puede observar que siguen el flujo, van casi directo a pedir una cotización y dejar sus datos para un posterior contacto con un asesor. Se puede notar un nivel de satisfacción positivo
+Las personas del grupo de servicio a cliente se le 
+Hay que ver como segmentar a la gente que tiene mayor interacción. scoring
+Se añade un typing en bloques largos i.e. "Quiero saber más"
+Piden préstamos
+deudas que no son suyas
+cuando no está la Community Manager
+Ser más claros con el tener que escoger una opción
+
+\medskip
+\textbf{Pruebas chatbot 4.0}
+Varios se quedan a la mitad del camino a la hora de dejar sus datos
+
+\medskip
+\textbf{Pruebas chatbot 5.0}
+Salen 2 ads que dirigen la conversación al bot [pedirle a Diego las imágenes]
+Se añade la opción de decir de donde nos vista si no es de México o Colombia y se guarda en otra Hoja de Google Sheets
+Se quita el mensaje que indica el monto mínimo si es menor la deuda a \$35,000

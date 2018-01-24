@@ -1,3 +1,62 @@
-\chapter{holasss}
+\chapter{Introducción}
 
-Aquí dicen cosas.
+\textbf{Antecedentes}
+
+A partir del uso cada vez más cotidiano de chat como medio de comunicación han surgido un gran número de plataformas de mensajería instantánea. Actualmente algunas empresas, sobre todo en Asia, han visto un aumento sustancial en ventas al usar plataformas como Line o Wechat para acercarse a sus clientes. Estos sistemas y plataformas han ido evolucionando y sofisticando su uso. A grado tal ha llegado la adopción del chat que para algunas empresas es la base de venta para todos sus productos.
+
+Por un lado, a partir de la compra de Whatsapp por Facebook, se ha visto en la empresa californiana un interés sobre el uso de su plataforma de mensajería instantánea, Messenger, como plataforma para el contacto de empresas en Occidente. 
+Desde la convención de desarrolladores de Facebook (F8) en 2016, donde anunciaron la apertura de su API para Messenger, se ha visto un constante crecimiento en el número de personas y empresas que quieren aprovechar a la gran base de usuarios que Facebook pone a su alcance.
+
+Además existen trabajos que han demostrado que la automatización de flujos de adquisición de clientes es benéfico para empresas que buscan aumentar su base de clientes y ofrecer productos innovadores \cite{makar2014automatic}. Se considera que hay dos componentes principalmente front-end y back-end.\cite{patil2017comparative} Existen actualmente varias formas de crear un agente de este tipo y se compararán aquí más adelante. 
+
+Por otro lado, Resuelve es una empresa cuya misión es ayudar a las personas a solucionar problemas financieros. Cuenta con más de 6 años de experiencia y sucursales por toda la República Mexicana y Colombia. Además de aproximadamente 1,600 colaboradores  Cuenta con varias líneas de negocio. Resuelve tu deuda es una reparadora de deuda y la línea de negocio más grande de la familia Resuelve. Para la  adquisición de clientes, el equipo de marketing en Resuelve, ha encontrado los medios digitales como la mejor vía. Actualmente  90\% de los clientes se enteraron de Resuelve tu deuda a partir de un anuncio de Adwords, Facebook o correo electrónico. Del 90\% de clientes aproximadamente el 50\% viene de Facebook, incluyendo anuncios pagados, página de admiradores (Fan pages) y conversaciones orgánicas. La parte de anuncios pagados se hace programáticamente, mientras que la parte conversacional es con personas que se dedican exclusivamente a responder dudas generales y hacer que dejen sus datos de contacto. 
+Además de lo anterior se ha visto que aún siendo clientes, hay dudas sobre cómo van avanzando en algún proceso interno. Lo cual hace el número de personas que atienden a clientes sea insuficiente. Se ha calculado que para el número de clientes, actuales y proyectados, es incosteable tener un número mayor de personas atendiendo a clientes.  Lo que ocasiona baja calidad en el servicio, un malestar en los clientes, bajas de clientes, mala imagen y pérdidas económicas. 
+
+Viendo la necesidad que se presenta y la apertura de plataformas como Facebook es que se propone en esta tesis es hacer un bot. El bot buscará dar respuestas automáticas a clientes o prospectos que buscan información o que estén interesados en el programa de reparación de deuda.
+
+\textbf{Objetivo}
+
+Este proyecto tiene como objetivo llevar a cabo la creación de un chatbot para la adquisición de clientes automática a partir de interacciones en Facebook Messenger.
+
+\textbf{Requerimientos funcionales}
+
+El proyecto tiene como alcance crear un chatbot que pueda tener una conversación guiada por menús, botones, respuestas rápidas e introducción de texto con personas que accedan a la conversación de Resuelve Tu Deuda a través de Facebook Messenger. Existirá una opción para saber más información, donde el usuario responderá con sus datos de contacto a las preguntas planteadas. Los datos de contacto serán almacenados en una base de datos, donde se almacenan los datos de todos los usuarios con interés en el producto.
+
+\textbf{Restricciones}
+
+La empresa estaba bajo el uso de herramientas del ecosistema de Amazon Web Services, así que cualquier desarrollo tendría que ser compatible con estas herramientas
+Como plataforma de mensajería instantánea se debe utilizar Messenger o Whatsapp
+El desarrollo, puesta en producción y operación del bot tiene que ser de bajo costo. Lo cual implica que entre todos los costos de operación, sin incluir el sueldo de las personas que desarrollan y mantienen el bot, debe ser el costo de adquisición por cliente menor al de la adquisición unitaria de clientes por otros canales digitales. Es decir, un lead del bot debe costar menos que un lead de canales como Facebook Ads, Adwords o un proveedor de leads externo.
+El chatbot debe estar optimizado para tener más clientes.
+
+\textbf{Alcance}
+
+Se desea crear un chatbot que sea capaz de interactuar con posibles clientes en la plataforma de Facebook Messenger. Las interacciones tendrán como objetivo dar información sobre el servicio que Resuelve Tu Deuda ofrece y también de pedir los datos de personas interesadas en adquirir el servicio de reparación de deuda. El sistema será capaz de recopilar esta información y guardarla en el sistema de administración de clientes o CRM (por sus siglas en inglés) para sus seguimiento por el área de ventas. Adicionalmente debe tener la capacidad de tener un sistema de análisis de interacciones y emisión de notas que vengan del blog de la empresa a múltiples segmentos de usuarios. El sistema debe estar activo todo el día y todos los días. Así mismo, si es necesario un usuario puede pedir la asistencia de una persona que le de información más detallada de su situación.
+
+\textbf{Justificación}
+
+La teoría nos indica que a partir de una buena planeación es más probable que lleguemos al éxito. Es por eso que lo primero que se pensó hacer en este proyecto fue definir para qué se quería tener un chatbot. Las razones principales de la implementación debían referir a la pregunta ¿Tener un chatbot mejora en algún sentido el producto que ofrecemos? Ya que un bot, un chatbot en este caso, aunque puede parecer un medio/producto innovador para los más entusiastas de la tecnología; no necesariamente sería algo que pueda interesar al cliente objetivo del negocio.
+
+
+Se sabe que el uso de tecnología para comunicarnos se ha adoptado cada vez más en los recientes años y según investigaciones de Facebook se sabe que el chat es medio de contacto preferido para la generación actual y hasta dos generaciones anteriores \cite{moremessage2016}. Ya que les parece un medio rápido y práctico de estar en contacto. Viendo esto se sabe que tenemos la oportunidad de mejorar el contacto con usuarios en donde más les agrada comunicarse.
+
+El primer objetivo, se centra en aumentar la obtención de clientes y el segundo mejorar el servicio de post-venta. Se definen estos objetivos por varias razones:
+
+El primero es muy sencillo, entre más clientes, mayores utilidades para la empresa. Esto aunado a la baja del costo por obtención de cliente y aumento en la probabilidad de cierre de venta. El costo de obtener los datos de un prospecto a cliente depende de varios factores:
+
+
+Existen canales adicionales (expos, radio, TV, espectaculares), los cuales no son muy efectivos en volumen de leads\cite{wiki:leadgen2018}, pero son de muy buena calidad, ya que casi todas las personas que se enteran desde esos medios y nos dan sus datos de contacto tienen un porcentaje de conversión a cliente (Porcentaje de Fase 2 (\% F2) mayor a 60\%. El chatbot debería poder presentarse aquí como una ayuda para responder preguntas más puntuales, seguir la conversación y permitirle al prospecto dejar sus datos.
+El chatbot se propone como un canal alterno también. Donde cualquiera que tenga dudas o tenga el interés puede dejar sus datos y se le dará seguimiento a su caso. En cualquier sentido el costo de operación debería ser muy bajo para que no aumente en demasía el dinero invertido en los demás canales de adquisición de clientes.
+
+La probabilidad de cierre reside en la hipótesis: a mejor interacción e información tenga el prospecto, será más sencillo convencerlo de comprar en el momento de la venta. El chatbot debería poder cumplir con el aumento de información proporcionada con una interacción amigable.
+
+El segundo objetivo es mejorar el servicio al cliente a través de la tecnología. Al crecer la empresa el número de clientes que tiene dudas diversas sobre el producto aumenta. Y ha aumentado a tal grado que un agente de servicio a cliente llega a tener hasta 600 personas a las que tiene que atender. Esto hace que disminuya la calidad de seguimiento que un cliente necesita, lo cual resulta en descontento y en el peor de los casos baja definitiva del programa.
+
+\textbf{Metodología}
+Se hará una investigación sobre el estado actual de los chatbots actuales y cuales son sus usos. A partir de esto se clasificará y elegirá el tipo de chatbot que es necesario para lograr el objetivo. 
+Después, se preguntará a las área de Ventas, Marketing y Servicio a Cliente acerca del acercamiento y trato a clientes institucional. 
+Enseguida, se hará un borrador de conversación guiada, el cual tendrá como objetivo sentar la estructura del chatbot. A partir de la estructura se creará el contenido de las interacciones, para crear el flujo en la herramienta y que quede implementado para la interacción de clientes.
+Por último, se integrará al flujo de creación de leads de la empresa. Se harán pruebas para asegurarse que todos los elementos del sistema funcionen correctamente y pruebas de concepto con usuarios internos. Se harán los cambios necesarios según sean necesarios. Se abrirá al público y se promocionará con anuncios pagados en la plataforma de anuncios de Facebook. Al finalizar, se hará un análisis de costos para descubrir si la adquisición de clientes es más rentable a partir de la integración del chatbot.
+
+\includegraphics[width=\textwidth]{PanoramaBots.jpg}
+
